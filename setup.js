@@ -1,6 +1,7 @@
 const shell = require('shelljs');
 const problemURL = process.env.PROBLEM_URL;
 const problemName = process.env.PROBLEM_NAME;
+const exec = require('child_process').exec;
 
 if (!problemURL || !problemName) {
   return 'Set URL & Name';
@@ -13,5 +14,15 @@ shell.mkdir('-p', projectURL);
 // Copy file
 const fileURL = projectURL + 'index.js';
 shell.cp('-R', './templates/index.js', fileURL);
+// PDirへ移動
+shell.cd(projectURL);
 
-shell.cd('..');
+const exexCommand = 'oj d ' + problemURL;
+exec(exexCommand, (err, stdout, stderr) => {
+  if (err) {
+    console.log(err);
+  }
+  console.log(stdout);
+});
+
+// shell.cd('..');
