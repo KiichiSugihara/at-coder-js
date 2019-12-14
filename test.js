@@ -8,8 +8,6 @@ if (!problemURL || !problemName) {
   return 'Set URL & Name';
 }
 
-console.log(problemURL, problemName);
-// make projectDir
 const projectURL = './src/' + String(problemName) + '/';
 
 // PDirへ移動
