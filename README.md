@@ -4,11 +4,11 @@ use JS for AtCoder
 
 # setup
 
-PROBLEM_URL='YOUR_URL' PROBLEM_NAME='YOUR_NAME' npm run setup
+PROBLEM_URL='https://atcoder.jp/contests/agc001/tasks/agc001_a' PROBLEM_NAME='agc001_a' npm run setup
 
 # compile
 
-PROBLEM_URL='YOUR_URL' PROBLEM_NAME='YOUR_NAME' npm run build
+PROBLEM_URL='https://atcoder.jp/contests/agc001/tasks/agc001_a' PROBLEM_NAME='agc001_a' npm run build
 npm run build
 
 # test
