@@ -11,9 +11,6 @@ console.log(problemURL, problemName);
 // make projectDir
 const projectURL = './src/' + String(problemName) + '/';
 
-// Copy file
-// const fileURL = projectURL + 'index.js';
-
 // PDirへ移動
 shell.cd(projectURL);
 
