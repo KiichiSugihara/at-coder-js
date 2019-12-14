@@ -19,14 +19,9 @@ npm run build
 
 npm run test
 
-oj d PROBLEM_URL
-oj t -c "node compile.js"
-
 # submit
 
-oj s PROBLEM_URL compile.js
-
-oj s compile.js
+npm run submit
 
 ### Reference
 
