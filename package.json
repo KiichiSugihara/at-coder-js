@@ -4,7 +4,7 @@
   "description": "use JS for AtCoder",
   "main": "setup.js",
   "scripts": {
-    "test": "node ./dist/main.js",
+    "test": "node test.js",
     "build": "webpack",
     "setup": "node setup.js",
     "clip": "pbcopy < ./dist/main.js"

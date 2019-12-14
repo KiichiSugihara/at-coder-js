@@ -13,6 +13,8 @@ npm run build
 
 # test
 
+PROBLEM_URL='https://atcoder.jp/contests/agc001/tasks/agc001_a' PROBLEM_NAME='agc001_a' npm run test
+
 oj d PROBLEM_URL
 oj t -c "node compile.js"
 
