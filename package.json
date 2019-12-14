@@ -2,11 +2,11 @@
   "name": "at-coder",
   "version": "1.0.0",
   "description": "use JS for AtCoder",
-  "main": "index.js",
+  "main": "setup.js",
   "scripts": {
     "test": "node ./dist/main.js",
     "build": "webpack",
-    "setup": "cp ./templates/index.js ./src/index.js",
+    "setup": "node setup.js",
     "clip": "pbcopy < ./dist/main.js"
   },
   "repository": {
@@ -29,6 +29,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "big-integer": "^1.6.44",
-    "core-js": "^3.0.1"
+    "core-js": "^3.0.1",
+    "shelljs": "^0.8.3"
   }
 }
