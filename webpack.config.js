@@ -1,5 +1,6 @@
-const problemURL = process.env.PROBLEM_URL;
-const problemName = process.env.PROBLEM_NAME;
+const config = require('./config');
+const problemURL = config.PROBLEM_URL;
+const problemName = config.PROBLEM_NAME;
 const projectDir = `${__dirname}/src/` + problemName;
 const entryFile = projectDir + '/' + 'index.js';
 module.exports = {

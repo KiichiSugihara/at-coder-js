@@ -1,6 +1,7 @@
 const shell = require('shelljs');
-const problemURL = process.env.PROBLEM_URL;
-const problemName = process.env.PROBLEM_NAME;
+const config = require('./config');
+const problemURL = config.PROBLEM_URL;
+const problemName = config.PROBLEM_NAME;
 const exec = require('child_process').exec;
 
 if (!problemURL || !problemName) {
