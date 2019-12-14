@@ -8,6 +8,7 @@ PROBLEM_URL='YOUR_URL' PROBLEM_NAME='YOUR_NAME' npm run setup
 
 # compile
 
+PROBLEM_URL='YOUR_URL' PROBLEM_NAME='YOUR_NAME' npm run build
 npm run build
 
 # test
