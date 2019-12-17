@@ -10,13 +10,12 @@ if (!problemURL || !problemName) {
 
 const projectURL = './src/' + String(problemName) + '/';
 
-// PDirへ移動
+// ProjectDirへ移動
 shell.cd(projectURL);
 
-const exexCommand = 'oj t -c' + '"node compile.js"';
-exec(exexCommand, (err, stdout, stderr) => {
+exec('oj t -c "node compile.js"', (err, stdout, stderr) => {
   if (err) {
     console.log(err);
   }
-  console.log(stdout);
+  console.log('Test Result', stderr);
 });
