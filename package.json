@@ -4,7 +4,7 @@
   "description": "use JS for AtCoder",
   "main": "setup.js",
   "scripts": {
-    "test": "node test.js",
+    "test": "webpack && node test.js",
     "build": "webpack",
     "setup": "node setup.js",
     "submit": "node submit.js",
