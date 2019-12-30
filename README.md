@@ -26,6 +26,9 @@ npm run test
 
 # submit
 
+oj s https://atcoder.jp/contests/abc149/tasks/abc149_a src/abc149_a/compile.js
+
+実装途中
 npm run submit
 
 ### Reference
