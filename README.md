@@ -4,8 +4,13 @@ use JS for AtCoder
 
 # Before using
 
+npm i
+
 pip3 install --user online-judge-tools
-Login AtCoder
+oj login https://beta.atcoder.jp/
+npm install -g atcoder-cli
+acc login
+acc session
 
 # setup
 
