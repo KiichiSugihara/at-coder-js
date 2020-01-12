@@ -2,7 +2,7 @@
 
 use JS for AtCoder
 
-# Before using
+## Before using
 
 npm i
 
@@ -12,19 +12,19 @@ npm install -g atcoder-cli
 acc login
 acc session
 
-# setup
+## setup
 
-PROBLEM_URL='https://atcoder.jp/contests/agc001/tasks/agc001_a' PROBLEM_NAME='agc001_a' npm run setup
+rewrite config.js
 
-# compile
+## compile
 
 npm run build
 
-# test
+## test
 
 npm run test
 
-# submit
+## submit
 
 oj s https://atcoder.jp/contests/abc149/tasks/abc149_a src/abc149_a/compile.js
 
