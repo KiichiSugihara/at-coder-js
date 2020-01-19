@@ -11,17 +11,12 @@ function main(input) {
   const Ps = input.split('\n')[1].split(' ');
   //文字列から10進数に変換するときはparseIntを使います
   const N = parseInt(inputs0[0], 10);
-
   let counter = 0;
+  let min = N + 1;
   for (let i = 0; i < N; i++) {
-    for (let j = 0; j < i + 1; j++) {
-      if (Number(Ps[i]) > Number(Ps[j])) {
-        break;
-      }
-
-      if (i === j) {
-        counter++;
-      }
+    if (Number(Ps[i]) <= min) {
+      min = Ps[i];
+      counter++;
     }
   }
   console.log(counter);
